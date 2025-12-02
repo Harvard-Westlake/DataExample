@@ -1,0 +1,101 @@
+/* Layout */
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+}
+
+/* App shell */
+
+.energy-app {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.energy-header {
+  text-align: left;
+}
+
+.energy-title {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+}
+
+.energy-subtitle {
+  margin: 0 0 0.75rem;
+  color: #4b5563;
+  font-size: 0.98rem;
+  max-width: 42rem;
+}
+
+.energy-source {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.energy-source a {
+  font-weight: 600;
+}
+
+/* Charts */
+
+.chart-section {
+  margin-top: 0.25rem;
+}
+
+.chart-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.1rem 1.35rem;
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.12),
+    0 1px 1px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+  .chart-card {
+    padding: 1.5rem 1.4rem 1.6rem;
+  }
+}
+
+.chart-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.chart-title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.chart-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 320px;
+}
+
+@media (min-width: 768px) {
+  .chart-wrapper {
+    height: 420px;
+  }
+}
+
